@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from "src/components/header"
-import "src/components/layout.css"
+import Header from 'src/components/header';
+import 'src/components/layout.css';
 
 const Layout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -13,7 +13,7 @@ const Layout: React.FC = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -34,7 +34,7 @@ const Layout: React.FC = ({ children }) => {
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
