@@ -1,0 +1,64 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "globals": {
+    "__DEV__": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["src", "./src"]],
+        "extensions": [".ts", "tsx", ".js", ".jsx"]
+      }
+    }
+  },
+  "rules": {
+    "import/extensions": ["error", "never"],
+    "react/prop-types": "off",
+    "no-param-reassign": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-shadow": "off",
+    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "no-multi-assign": "off",
+    "no-plusplus": "off",
+    "global-require": "off",
+    "react/no-array-index-key": "off",
+    "no-return-assign": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "camelcase": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "ignore",
+        "condition": "ignore",
+        "logical": "ignore",
+        "prop": "ignore"
+      }
+    ],
+    "no-alert": "off",
+    "no-console": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "prettier/prettier": "error"
+  }
+}
