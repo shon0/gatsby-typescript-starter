@@ -18,6 +18,5 @@
     "skipLibCheck": true,
     "jsx": "react",
     "lib": ["dom", "esnext"]
-  },
-  "include": ["./src/**/*"]
+  }
 }

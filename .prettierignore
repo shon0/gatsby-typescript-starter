@@ -3,3 +3,12 @@ package.json
 package-lock.json
 public
 src/images
+node_modules
+.eslintrc
+.eslintignore
+.editorconfig
+.env**
+.prettierignore
+.gitignore
+yarn-error.log
+yarn.lock

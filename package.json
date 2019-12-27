@@ -10,15 +10,15 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "GATSBY_ENV=development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "tsc": "tsc --noEmit",
-    "prettier": "prettier --write 'src/**'",
-    "eslint": "eslint --fix 'src/**'"
+    "prettier": "prettier --write './**'",
+    "eslint": "eslint --fix './'"
   },
   "dependencies": {
     "gatsby": "^2.18.12",
